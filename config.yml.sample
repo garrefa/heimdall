@@ -1,0 +1,13 @@
+targets:
+  # TargetA
+  - name: TargetA
+    path: ./TargetA/UITests
+    tests:
+      - ./xctests/TargetA-UITest-results-uitests_iPhone14-1.zip
+      - ./xctests/TargetA-UITest-results-uitests_iPhone14-2.zip
+  # TargetB
+  - name: TargetB
+    path: ./TargetB/UITests
+    tests:
+      - ./xctests/TargetB-UITest-results-uitests_iPhone14-1.zip
+      - ./xctests/TargetB-UITest-results-uitests_iPhone14-2.zip
