@@ -1,7 +1,7 @@
 import ArgumentParser
 
 @main
-struct HeimdallsWatch: ParsableCommand {
+struct Heimdall: ParsableCommand {
     @Option(name: .shortAndLong, help: "The path for the config.yml file.")
     var config: String?
 

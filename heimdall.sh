@@ -1,1 +1,1 @@
-swift run HeimdallsWatch $@
+swift run Heimdall $@

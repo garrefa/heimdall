@@ -4,20 +4,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "HeimdallsWatch",
+    name: "Heimdall",
     dependencies: [
         .package(url: "https://github.com/jpsim/Yams.git", from: "5.1.0"),
         .package(url: "https://github.com/apple/swift-argument-parser", from: "1.3.0"),
     ],
     targets: [
         .executableTarget(
-            name: "HeimdallsWatch",
+            name: "Heimdall",
             dependencies: [
                 .product(name: "Yams", package: "Yams"),
                 .product(name: "ArgumentParser", package: "swift-argument-parser")
             ]),
         .testTarget(
-            name: "HeimdallsWatchTests",
-            dependencies: ["HeimdallsWatch"]),
+            name: "HeimdallTests",
+            dependencies: ["Heimdall"]),
     ]
 )

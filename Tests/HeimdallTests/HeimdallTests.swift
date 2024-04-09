@@ -1,7 +1,7 @@
 import XCTest
-@testable import HeimdallsWatch
+@testable import Heimdall
 
-final class HeimdallsWatchTests: XCTestCase {
+final class HeimdallTests: XCTestCase {
     
     func testLoginHappyFlow() throws {
         Given("I am on the login page")

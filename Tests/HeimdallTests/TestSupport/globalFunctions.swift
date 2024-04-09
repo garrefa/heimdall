@@ -36,6 +36,18 @@ func Then(_ description: String,
             line: line)
 }
 
+func And(_ description: String,
+           file: String = #file,
+           function: String = #function,
+           line: Int = #line
+) {
+    BDDFunc(step: "And",
+            description: description,
+            file: file,
+            function: function,
+            line: line)
+}
+
 private func BDDFunc(step: String,
                      description: String,
                      file: String = #file,
