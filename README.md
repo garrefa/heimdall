@@ -1,4 +1,4 @@
-# Heimdall's Watch
+# Heimdall
 
 ## What?
 
