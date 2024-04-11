@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A4E47552BC556E0008C394B /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4E47542BC556E0008C394B /* ViewCoordinator.swift */; };
+		8A4E47592BC57716008C394B /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4E47582BC57716008C394B /* Application.swift */; };
+		8A4E475C2BC5774E008C394B /* ContentCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4E475B2BC5774E008C394B /* ContentCoordinator.swift */; };
 		8A84F7C92BC52F7B00BAA91B /* HeimdallTestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A84F7C82BC52F7B00BAA91B /* HeimdallTestAppApp.swift */; };
-		8A84F7CB2BC52F7B00BAA91B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A84F7CA2BC52F7B00BAA91B /* ContentView.swift */; };
+		8A84F7CB2BC52F7B00BAA91B /* LoginScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A84F7CA2BC52F7B00BAA91B /* LoginScene.swift */; };
 		8A84F7CD2BC52F7E00BAA91B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A84F7CC2BC52F7E00BAA91B /* Assets.xcassets */; };
 		8A84F7D02BC52F7F00BAA91B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A84F7CF2BC52F7F00BAA91B /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A4E47542BC556E0008C394B /* ViewCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
+		8A4E47582BC57716008C394B /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		8A4E475B2BC5774E008C394B /* ContentCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCoordinator.swift; sourceTree = "<group>"; };
 		8A84F7C52BC52F7B00BAA91B /* HeimdallTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeimdallTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A84F7C82BC52F7B00BAA91B /* HeimdallTestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeimdallTestAppApp.swift; sourceTree = "<group>"; };
-		8A84F7CA2BC52F7B00BAA91B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8A84F7CA2BC52F7B00BAA91B /* LoginScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScene.swift; sourceTree = "<group>"; };
 		8A84F7CC2BC52F7E00BAA91B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A84F7CF2BC52F7F00BAA91B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +38,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A4E47532BC556BE008C394B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8A4E47542BC556E0008C394B /* ViewCoordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8A4E47562BC56AB1008C394B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8A84F7CA2BC52F7B00BAA91B /* LoginScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8A4E47572BC56AC9008C394B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8A84F7C82BC52F7B00BAA91B /* HeimdallTestAppApp.swift */,
+				8A4E47582BC57716008C394B /* Application.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8A4E475A2BC57743008C394B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8A4E475B2BC5774E008C394B /* ContentCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		8A84F7BC2BC52F7B00BAA91B = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +90,10 @@
 		8A84F7C72BC52F7B00BAA91B /* HeimdallTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				8A84F7C82BC52F7B00BAA91B /* HeimdallTestAppApp.swift */,
-				8A84F7CA2BC52F7B00BAA91B /* ContentView.swift */,
+				8A4E47572BC56AC9008C394B /* App */,
+				8A4E475A2BC57743008C394B /* Coordinators */,
+				8A4E47532BC556BE008C394B /* Protocols */,
+				8A4E47562BC56AB1008C394B /* Scenes */,
 				8A84F7CC2BC52F7E00BAA91B /* Assets.xcassets */,
 				8A84F7CE2BC52F7F00BAA91B /* Preview Content */,
 			);
@@ -137,7 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A84F7CB2BC52F7B00BAA91B /* ContentView.swift in Sources */,
+				8A4E47592BC57716008C394B /* Application.swift in Sources */,
+				8A84F7CB2BC52F7B00BAA91B /* LoginScene.swift in Sources */,
+				8A4E475C2BC5774E008C394B /* ContentCoordinator.swift in Sources */,
+				8A4E47552BC556E0008C394B /* ViewCoordinator.swift in Sources */,
 				8A84F7C92BC52F7B00BAA91B /* HeimdallTestAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,9 +326,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.area51.HeimdallTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -311,9 +359,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.area51.HeimdallTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

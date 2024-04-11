@@ -10,17 +10,11 @@ let package = Package(
             name: "Heimdall",
             targets: ["Heimdall"]),
     ],
-    dependencies: [
-        .package(url: "https://github.com/jpsim/Yams.git", from: "5.1.0"),
-        .package(url: "https://github.com/apple/swift-argument-parser", from: "1.3.0"),
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "Heimdall",
-            dependencies: [
-                .product(name: "Yams", package: "Yams"),
-                .product(name: "ArgumentParser", package: "swift-argument-parser")
-        ]),
+            dependencies: []),
         .testTarget(
             name: "HeimdallTests",
             dependencies: ["Heimdall"]),

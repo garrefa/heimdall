@@ -3,25 +3,28 @@ import XCTest
 
 final class HeimdallTests: XCTestCase {
     
+    func testBart() throws {
+        doSomething()
+    }
+    
     func testLoginHappyFlow() throws {
-        Given("I am on the login page")
-        doSomething()
+        Given("I am on the login page") { _ in
+            doSomething()
+        }
         
-        When("I enter my valid username and password")
-        doSomething()
+        When("I enter my valid username and password") { _ in
+            doSomething()
+        }
         
-        When("I click the login button")
-        doSomething()
+        When("I click the login button") { _ in
+            doSomething()
+        }
         
-        Then("I should be redirected to my account dashboard")
-        doSomething()
+        Then("I should be redirected to my account dashboard") { _ in
+            doSomething()
+        }
         
-        Tags(
-            .team("Transformers"),
-            .module("PIS"),
-            .feature("ExternalPayment"),
-            .info("HappyFlow")
-        )
+        Tags([.transformers, .pis, .feature("ExternalPayment"), .info("happy-flow")])
         
         XCTAssertTrue(true)
     }
